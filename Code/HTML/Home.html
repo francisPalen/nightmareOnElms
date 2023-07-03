@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Escape From Elms</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css" />
+    <link rel="icon" href="../Images/favicon.png" type="image/icon type">
+
+</head>
+
+<body>
+
+    <div id="warning-message"><img src="../Images/turndevice.png" alt="Turn your device">
+        <!-- Used to warn user that the screen is too small, 'must be landscape' -->
+        <p>Please turn your device</p>
+        <p>The game can only be played in landscape!</p>
+    </div>
+
+    <div id="wrapper" onclick="bgmusic()">
+
+        <div class="container">
+            <!-- class 'container' is only used for formatting -->
+
+            <audio id="bgmusic" controls loop>
+                <source src="../Sound/Home/menu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <audio id="clicksound">
+                <source src="../Sound/Home/click.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div id="title">
+                <h1>Escape Room</h1>
+            </div>
+
+            <div id="navbar">
+                <li><a href="Home.html">Escape From Elms</a></li>
+                <li><a><button id="mutebtn" onclick="clicksound(), mutePage()">mute</button></a></li>
+
+            </div>
+
+            <section id="menu">
+
+                <div id="characters">
+
+                    <div id="pick">
+                        <p>Pick a Character:</p>
+                    </div>
+
+                    <table>
+                        <!-- Character selection -->
+                        <tr>
+                            <td><button class="char1" alt="character1" onclick="clicksound()"></button></td>
+                            <td><button class="char2" alt="character2" onclick="clicksound()"></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="char3" alt="character3" onclick="clicksound()"></button></td>
+                            <td><button class="char4" alt="character4" onclick="clicksound()"></button></td>
+                        </tr>
+
+                    </table>
+
+                </div> <!-- End of character div -->
+
+                <div id="inputcontainer">
+
+                    <div class="char-placeholder">
+                        <img src="../Images/Home/question.png" alt="Character-Chosen">
+                    </div>
+
+                    <div class="difficulty-container">
+                        <input type="radio" name="difficulty" id="easy" checked="checked" onclick="clicksound()">
+                        <label for="easy">Easy</label>
+
+                        <input type="radio" name="difficulty" id="medium" onclick="clicksound()">
+                        <label for="medium">Medium</label>
+
+                        <input type="radio" name="difficulty" id="hard" onclick="clicksound()">
+                        <label for="hard">Hard</label>
+                    </div>
+
+                    <form id="form" action="Level1.html">
+                        <input type="text" id="user" placeholder="Name" maxlength="15" required />
+
+                        <button type="submit" id="play" onclick="clicksound()">Play</button>
+                    </form>
+
+                </div><!-- end of inputcontainer -->
+
+            </section>
+
+        </div><!-- end of div 'container' -->
+
+    </div><!-- end of div 'wrapper' -->
+
+    <script src="../JS/Home.js"></script>
+
+</body>
+
+</html>

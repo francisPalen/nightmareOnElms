@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escape From Elms</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/Level4.css" />
+    <link rel="icon" href="../Images/favicon.png" type="image/icon type">
+
+</head>
+
+<body onload="startingtext()">
+
+    <div id="warning-message"><img src="../Images/turndevice.png" alt="Turn your device">
+        <!-- Used to warn user that the screen is too small, 'must be landscape' -->
+        <p>Please turn your device</p>
+        <p>The game can only be played in landscape!</p>
+    </div>
+
+    <div id="wrapper" onclick="bgmusic()">
+
+        <div class="container">
+            <!-- class 'container' is only used for formatting -->
+
+            <audio id="bgmusic" controls loop>
+                <source src="../Sound/Level4/menu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <audio id="clicksound">
+                <source src="../Sound/Level4/click.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div id="title">
+                <h1>Escape From Elms</h1>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li><button type="submit" id="textBtnLarge" onclick="textButtonSmall()">S</button></li>
+                    <li><button type="submit" id="textBtnMedium" onclick="textButtonMedium()">M</button></li>
+                    <li><button type="submit" id="textBtnSmall" onclick="textButtonLarge()">L</button></li>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a>Time: <span id="timer">120</span></a></li>
+                    <li><a href="Level1.html">Restart</a></li>
+                    <li><a><button id="mutebtn" onclick="clicksound(), mutePage()">mute</button></a></li>
+                </ul>
+            </nav>
+
+            <aside id="dialogue">
+                <p>Text placeholder</p>
+            </aside>
+
+            <section id="level">
+                <button id="passage1" onclick="clicksound()"></button>
+                <button id="passage2" onclick="clicksound()"></button>
+                <button id="passage3" onclick="clicksound()"></button>
+                <button id="return1" onclick="clicksound()"></button>
+                <button id="roompassage" onclick="clicksound()"></button>
+                <button id="finalpassage" onclick="clicksound()"></button>
+                <button id="hallwayend" onclick="clicksound()"></button>
+            </section>
+
+            <div class="GameInventory">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="inventorybox1">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox2">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox3">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox4">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox5">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox6">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox7">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div><!-- end of div 'container' -->
+
+    </div><!-- end of div 'wrapper' -->
+
+    <script src="../JS/Level4.js"></script>
+
+</body>
+
+</html>

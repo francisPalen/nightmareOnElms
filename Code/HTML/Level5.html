@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escape From Elms</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/Level5.css" />
+    <link rel="icon" href="../Images/favicon.png" type="image/icon type">
+
+</head>
+
+<body>
+
+    <div id="warning-message"><img src="../Images/turndevice.png" alt="Turn your 
+        device">
+        <!-- Used to warn user that the screen is too small, 'must be landscape' -->
+        <p>Please turn your device</p>
+        <p>The game can only be played in landscape!</p>
+    </div>
+
+    <div id="wrapper">
+
+        <div class="container">
+            <!-- class 'container' is only used for formatting -->
+
+            <div id="title">
+                <h1>Escape From Elms</h1>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a>Time: <span id="timer">60</span></a></li>
+                    <li><a href="Level1.html">Restart</a></li>
+                    <li><button type="submit" class="textbtnlarge" id="textBtnlarge" onclick="textButtonSmall()">S</button></li>
+                    <li><button type="submit" class="textbtnsmall" id="textBtnsmall" onclick="textButtonMedium()">M</button></li>
+                    <li><button type="submit" class="textbtnsmall" id="textBtnsmall" onclick="textButtonLarge()">L</button></li>
+                    <li><button type="submit" class="Play Music" id="musicplay" onclick="audioplay()">▶️</button></li>
+                </ul>
+
+            </nav>
+
+            <aside id="dialogue">
+            </aside>
+
+            <section id="level">
+
+                <button class="btnZoomTire" id="btnZoomTire" onclick="ZoomTireFunction()"></button>
+                <button class="btnCarDoor" id="btnCarDoor" onclick="DoorSelectFunction()"></button>
+                <button class="btnBack" id="btnBack" onclick="BackFunction()">BACK</button>
+                <button class="btnKeys" id="btnKeys" onclick="KeysGrabFunction()"></button>
+                <button class="btnPassengerSeat" id="btnPassengerseat" onclick="PSFunction()"></button>
+                <button class="btnBackSeat" id="btnBackSeat" onclick="BSFunction()"></button>
+                <button class="btnSteeringWheel" id="btnSteeringWheel" onclick="SteeringWheelFunction()"></button>
+                <button class="btnSD" id="btnSD" onclick="SDGrabFunction()"></button>
+                <button class="btnWC" id="btnWC" onclick="WCGrabFunction()"></button>
+                <button class="btnOC" id="btnOC" onclick="OCFunction()"></button>
+                <button class="btnW1" id="btnW1" onclick="W1Function()"></button>
+                <button class="btnW1b" id="btnW1b" onclick="W1bFunction()"></button>
+                <button class="btnW2" id="btnW2" onclick="W2Function()"></button>
+                <button class="btnW2b" id="btnW2b" onclick="W2bFunction()"></button>
+                <button class="btnW3" id="btnW3" onclick="W3Function()"></button>
+                <button class="btnW3b" id="btnW3b" onclick="W3bFunction()"></button>
+                <button class="btnW4" id="btnW4" onclick="W4Function()"></button>
+                <button class="btnW4b" id="btnW4b" onclick="W4bFunction()"></button>
+                <button class="btnW5" id="btnW5" onclick="W5Function()"></button>
+                <button class="btnW5b" id="btnW5b" onclick="W5bFunction()"></button>
+                <button class="btnW6" id="btnW6" onclick="W6Function()"></button>
+                <button class="btnW6b" id="btnW6b" onclick="W6bFunction()"></button>
+                <button class="btnEscape" id="btnEscape" onclick="escape()">ESCAPE</button>
+                <h4> </h4>
+            </section>
+
+            <div class="GameInventory">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="inventorybox1" id="inventorybox1"></div>
+                        </td>
+                        <td>
+                            <div class="inventorybox2" id="inventorybox2"></div>
+                        </td>
+                        <td>
+                            <div class="inventorybox3" id="inventorybox3"></div>
+                        </td>
+                        <td>
+                            <div class="inventorybox4" id="inventorybox4"></div>
+                        </td>
+                        <td>
+                            <div class="inventorybox5" id="inventorybox5"></div>
+                        </td>
+                        <td>
+                            <div class="inventorybox6" id="inventorybox6"></div>
+                        </td>
+                        <td>
+                            <div class="inventorybox7" id="inventorybox7"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div><!-- end of div 'container' -->
+
+    </div><!-- end of div 'wrapper' -->
+
+    <script src="../JS/Level5.js"></script>
+
+</body>
+
+</html>

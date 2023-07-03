@@ -1,0 +1,516 @@
+body {
+    /*-- Page background --*/
+    background-color: #120F12;
+}
+
+#title {
+    /*-- Title --*/
+    text-align: center;
+    color: darkgrey;
+    font-family: 'Courier New'monospace;
+    font-size: 120%;
+    border: 100px;
+}
+
+.container {
+    /*-- Contains dialogue, level boxes --*/
+    position: relative;
+    max-width: 70%;
+    min-width: 750px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*-- Navigation Bar & Time --*/
+#navbar {
+    background-color: #160910;
+    border: 5px solid #1B1B1C;
+    margin-left: 0;
+    padding: 1px;
+    text-align: center;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+#navbar ul {
+    padding: 0;
+    List-style: none;
+}
+
+/*-- Centers list --*/
+
+#navbar li {
+    display: inline;
+}
+
+/*-- Makes list inline/horizontal --*/
+
+#navbar a {
+    /*-- Navigation Bar Text --*/
+    color: darkgrey;
+    font-family: 'Courier New'monospace;
+    text-decoration: none;
+    font-size: 130%;
+    padding-right: 15px;
+}
+
+#navbar a:hover {
+    color: red;
+}
+
+#navbar a:active {
+    color: green;
+}
+
+/*-- End of Navigation Bar --*/
+
+#dialogue {
+    /*-- Dialogue Box --*/
+    float: left;
+    border: 5px solid #121C1F;
+    background-color: #160910;
+    width: 30%;
+    height: 30vw;
+    min-height: 325px;
+    box-sizing: border-box;
+
+    /*-- Dialogue Text --*/
+    font-family: 'Courier New'monospace;
+    padding: 5px;
+    font-size: 2vw;
+    color: darkgrey;
+}
+
+#level {
+    /*-- Level Box --*/
+    position: relative;
+    float: right;
+    border: 5px solid #121C1F;
+    width: 70%;
+    height: 30vw;
+    min-height: 325px;
+    box-sizing: border-box;
+    display: flex;
+
+    background-image: url('../Images/Level5/IMG1.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-- Declaring all my buttons --*/
+
+.btnZoomTire {
+    position: relative;
+    padding: 0px;
+    top: 82%;
+    left: 30%;
+    border: none;
+    height: 13vh;
+    width: 20vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnCarDoor {
+    position: relative;
+    padding: 0px;
+    top: 0%;
+    left: 35%;
+    border: none;
+    height: 50vh;
+    width: 30vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnBack {
+    visibility: hidden;
+    position: relative;
+    padding: 0px;
+    top: 90%;
+    right: 45%;
+    border: none;
+    height: 5vh;
+    width: 10vw;
+    background: #160910;
+    font-size: 7;
+    color: darkgrey;
+}
+
+.btnOC {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 22%;
+    right: 20%;
+    border: none;
+    height: 30vh;
+    width: 70vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW1 {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 77%;
+    right: 37%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW1b {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 75%;
+    right: 2%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW2 {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 54%;
+    right: 38%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW2b {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 80%;
+    left: 11%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW3 {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 77%;
+    right: 38%;
+    border: none;
+    height: 5vh;
+    width: 6vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW3b {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 65%;
+    right: 7%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW4 {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 50%;
+    right: 37%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW4b {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 53%;
+    right: 15%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW5 {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 65%;
+    right: 40%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW5b {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 57%;
+    right: 3%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW6 {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 40%;
+    right: 40%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnW6b {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 84%;
+    right: 5%;
+    border: none;
+    height: 5vh;
+    width: 5vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnKeys {
+    visibility: hidden;
+    position: relative;
+    padding: 0px;
+    top: 12%;
+    right: 23%;
+    border: none;
+    height: 30vh;
+    width: 45vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnSD {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 40%;
+    right: 55%;
+    border: none;
+    height: 20vh;
+    width: 10vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnEscape {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 5%;
+    right: 50%;
+    border: none;
+    height: 15vh;
+    width: 50vw;
+    background: #160910;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New'monospace;
+    font-size: 2vw;
+    border: 100px;
+}
+
+.btnWC {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 42%;
+    right: 32%;
+    border: none;
+    height: 15vh;
+    width: 15vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnSteeringWheel {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 60%;
+    left: 7%;
+    border: none;
+    height: 30vh;
+    width: 15vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnBackSeat {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 0%;
+    right: 20%;
+    border: none;
+    height: 50vh;
+    width: 12vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+.btnPassengerSeat {
+    display: none;
+    position: relative;
+    padding: 0px;
+    top: 0%;
+    left: 36%;
+    border: none;
+    height: 50vh;
+    width: 17vw;
+    background: transparent;
+    border: none;
+    font-size: 0;
+    outline: none;
+}
+
+/*-- Finished Declaring Buttons --*/
+
+/*-- Creating the Inventory boxes --*/
+
+.GameInventory {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background-color: #160910;
+    border: 0.25vw solid #1B1B1C;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+.inventorybox1,
+.inventorybox2,
+.inventorybox3,
+.inventorybox4,
+.inventorybox5,
+.inventorybox6,
+.inventorybox7 {
+    height: 10vh;
+    width: 5vw;
+    margin: 5px;
+    border: 0.25vw solid #121C1F;
+    border-radius: 0.5vw;
+    background: #160910;
+    cursor: pointer;
+    background-size: cover;
+}
+
+/*-- Warns user if display is too small --*/
+#warning-message {
+    display: none;
+}
+
+#warning-message {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 4vw;
+}
+
+@media only screen and (orientation:portrait) {
+
+    #wrapper {
+        display: none;
+    }
+
+    #warning-message {
+        display: block;
+    }
+}
+
+@media only screen and (orientation:landscape) {
+
+    #warning-message {
+        display: none;
+    }
+
+    /*-- End of display warning --*/
+}

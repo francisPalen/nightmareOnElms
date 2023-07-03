@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elms End Page</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/endpagecss.css" />
+    <link rel="icon" href="../Images/favicon.png" type="image/icon type">
+
+</head>
+
+<body onload="loadDetails(), charLoad(), secretLoad()">
+
+    <div id="warning-message"><img src="../Images/turndevice.png" alt="Turn your 
+        device">
+        <!-- Used to warn user that the screen is too small, 'must be landscape' -->
+        <p>Please turn your device</p>
+        <p>The game can only be played in landscape!</p>
+    </div>
+
+    <div id="wrapper">
+
+        <div class="container">
+            <!-- class 'container' is only used for formatting -->
+
+            <div id="title">
+                <h1>Escape From Elms</h1>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Level1.html">Restart</a></li>
+                </ul>
+            </nav>
+
+            <section id="level">
+
+                <h1 id="secret1">You have escaped!</h1>
+                <p id="user">.</p>
+                <p id="difficulty">Difficulty:</p>
+                <p id="time">You completed the game in:</p>
+                <div id="char"></div>
+
+            </section>
+
+        </div><!-- end of div 'container' -->
+
+    </div><!-- end of div 'wrapper' -->
+
+  <script src="../JS/elmsendpage.js"></script>
+
+</body>
+
+</html>

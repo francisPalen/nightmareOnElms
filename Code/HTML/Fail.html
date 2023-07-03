@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escape From Elms</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/Fail.css" />
+    <link rel="icon" href="../Images/favicon.png" type="image/icon type">
+
+</head>
+
+<body>
+
+    <div id="warning-message"><img src="../Images/turndevice.png" alt="Turn your device">
+        <!-- Used to warn user that the screen is too small, 'must be landscape' -->
+        <p>Please turn your device</p>
+        <p>The game can only be played in landscape!</p>
+    </div>
+
+    <button id="continue" onclick="laughsound()"><p>You Have Failed</p></button>
+
+    <div id="wrapper">
+
+        <div class="container">
+            <!-- class 'container' is only used for formatting -->
+
+            <audio id="laughsound">
+                <source src="../Sound/Fail/fail.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+
+        <div id="title">
+            <h1>Escape From Elms</h1>
+        </div>
+
+        <div id="dialogue">
+            <p>You've failed miserably.</p>
+        </div>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Level1.html">Restart</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <script src="../JS/Fail.js"></script>
+
+</body>
+
+</html>

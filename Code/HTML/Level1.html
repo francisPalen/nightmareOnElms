@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escape From Elms</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/Level1.css" />
+    <link rel="icon" href="../Images/favicon.png" type="image/icon type">
+
+</head>
+
+<body>
+
+    <div id="warning-message"><img src="../Images/turndevice.png" alt="Turn your 
+        device">
+        <!-- Used to warn user that the screen is too small, 'must be landscape' -->
+        <p>Please turn your device</p>
+        <p>The game can only be played in landscape!</p>
+    </div>
+
+    <div id="wrapper" onclick="backgroundMusic()">
+
+        <div class="container">
+            <!-- class 'container' is only used for formatting -->
+            <audio id="backgroundmusic" controls loop>
+                <source src="../Sound/Level1/menu.mp3" type="audio/mpeg">
+            </audio>
+
+            
+             <audio id="backgroundmusic" controls loop>
+                <source src="../Sound/Level1/menu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <audio id="clicksound">
+                <source src="../Sound/Level1/click.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <div id="title">
+                <h1>Escape From Elms</h1>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a>Time: <span id="timer">30</span></a></li>
+                    <li><a href="Level1.html">Restart</a></li>
+                    <li><a href='#'>Text Size: </a></li>
+                    <li><button type="submit" class="testbtnlarge" id="testBtnlarge" onclick="testButtonSmall()">S</button> </li>
+                    <li><button type="submit" class="testbtnsmall" id="testBtnsmall" onclick="testButtonMedium()">M</button> </li>
+                    <li><button type="submit" class="testbtnsmall" id="testBtnsmall" onclick="testButtonLarge()">L</button> </li>
+                </ul>
+
+            </nav>
+
+            <aside id="dialogue">
+                <p>[SYSTEM]You awake in your room ... oh no, a zombie outbreak in Elms! Quick! You must find the key to unlock the door of your room. </p>
+                <p id="prompt"> [USER] Shall I start searching?</p>
+                <button onclick="checkItem('laptop')">YES</button>
+                <button id="secret">NO</button>
+                <div id="button_response"></div>
+                <div id="is_key_found"></div>
+            </aside>
+
+            <section id="level">
+                <button id="btnZoomLaptop"></button>
+                <button id="btnZoomLamp"></button>
+                <button id="btnZoomBookshelf"></button>
+                <button id="btnBack">BACK</button>
+                <button id="btnKey"></button>
+                <button id="btnEscape">ESCAPE ROOM</button>
+            </section>
+
+            <div class="GameInventory">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="inventorybox1">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox2">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox3">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox4">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox5">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox6">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox7">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div><!-- end of div 'container' -->
+
+    </div><!-- end of div 'wrapper' -->
+
+    <script src="../JS/Level1.js"></script>
+
+
+</body>
+
+</html>

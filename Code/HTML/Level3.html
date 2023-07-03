@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape From Elms</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/Level3.css" />
+    <link rel="icon" href="../Images/favicon.png" type="image/icon type">
+
+</head>
+
+<body>
+
+    <div id="warning-message"><img src="../Images/turndevice.png" alt="Turn your 
+        device">
+        <!-- Used to warn user that the screen is too small, 'must be landscape' -->
+        <p>Please turn your device</p>
+        <p>The game can only be played in landscape!</p>
+    </div>
+
+    <div id="wrapper" onclick="bgmusic()">
+
+        <div class="container">
+            <!-- class 'container' is only used for formatting -->
+
+            <audio id="bgmusic" controls loop>
+                <source src="../Sound/Level3/menu.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio id="clicksound">
+                <source src="../Sound/Level3/click.mp3" type="audio/mpeg">
+            </audio>
+
+            <div id="title">
+                <h1>Escape From Elms</h1>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li><button type="submit" id="textBtnSmall" onclick="textButtonSmall()">S</button></li>
+                    <li><button type="submit" id="textBtnMedium" onclick="textButtonMedium()">M</button></li>
+                    <li><button type="submit" id="textBtnLarge" onclick="textButtonLarge()">L</button></li>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a>Time: <span id="timer">60</span></a></li>
+                    <li><a href="Level1.html">Restart</a></li>
+                    <li><a><button id="mutebtn" onclick="clicksound(), mutePage()">mute</button></a></li>
+                </ul>
+            </nav>
+
+            <aside id="dialogue">
+                <p>Seems like im stuck in this kitchen...</p>
+                <p>I need to find a way out before I'm found!</p>
+            </aside>
+
+            <section id="level">
+                <input type="image" id="image2" onclick="clicksound()" src="../Images/Level3/key.png">
+                <input type="image" id="image3" id="image3" name="image3" onclick="clicksound(), checkCode()" src="../Images/Level3/vault.png" />
+                <input type="image" id="image4" onclick="clicksound(), window.alert('Seems like I could use this to open something'), image8.style.display='none';" src="../Images/Level3/screwdriver.png" />
+                <input type="image" id="image5" onclick="clicksound(), window.alert('This key is broken...');" src="../Images/Level3/brokenkey.png" />
+                <input type="image" id="image6" onclick="clicksound(), window.alert('This phone has no battery');" src="../Images/Level3/phone.png" />
+                <input type="image" id="image7" onclick="clicksound()" src="../Images/Level3/chest.png">
+                <button id="image8" onclick="clicksound(), window.alert('One of the numbers is obscured... It says 97*0, I need to figure out the last missing number')"></button>
+            </section>
+
+            <div class="GameInventory">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="inventorybox1">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox2">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox3">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox4">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox5">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox6">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox7">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div><!-- end of div 'container' -->
+
+    </div><!-- end of div 'wrapper' -->
+
+    <script src="../JS/level3.js"></script>
+
+</body>
+
+</html>

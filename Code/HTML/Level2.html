@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escape From Elms</title>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/Level2.css" />
+    <link rel="icon" href="../Images/favicon.png" type="image/icon type">
+
+</head>
+
+<body onload="openingText();">
+
+    <audio autoplay='autoplay' id="creepyLights">
+        <source src='../Sound/Level2/lights.wav' type='audio/wav'>
+    </audio>
+
+    <audio autoplay='autoplay' id="bassyParty">
+        <source src='../Sound/Level2/bassyParty.wav' type='audio/wav'>
+    </audio>
+
+    <audio id="audio" src="../Sound/Level2/lightFix.wav" type='audio/wav'></audio>
+
+    <div id="warning-message"><img src="../Images/turndevice.png" alt="Turn your 
+        device">
+        <!-- Used to warn user that the screen is too small, 'must be landscape' -->
+        <p>Please turn your device</p>
+        <p>The game can only be played in landscape!</p>
+    </div>
+
+    <div id="wrapper">
+
+        <div class="container">
+            <!-- class 'container' is only used for formatting -->
+
+            <div id="title">
+                <h1>Escape From Elms</h1>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li><button type="submit" id="textBtnLarge" onclick="textButtonSmall()">S</button></li>
+                    <li><button type="submit" id="textBtnMedium" onclick="textButtonMedium()">M</button></li>
+                    <li><button type="submit" id="textBtnSmall" onclick="textButtonLarge()">L</button></li>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a>Time: <span id="timer">30</span></a></li>
+                    <li><a href="Level1.html">Restart</a></li>
+                </ul>
+
+            </nav>
+
+
+            <aside id="dialogue">
+                <p><span id="dialogueSpan"></span></p>
+                <form id="maintenanceRequest" onsubmit="return false">
+                    <label for="keyPhraseEntry">Please Enter The Secret Maintenance Keyphrase:</label><br>
+                    <input type="text" id="keyPhraseEntry" name="keyPhraseEntry">
+                    <button type="submit" class="btn" id="saveScoreBtn" onclick="checkMaintenanceRequest(event)">Submit Request</button><br>
+                    <label id="invalidInfoLabel">INVALID INFORMATION</label><br>
+                </form>
+                <img id="lightBulb" src="../Images/Level2/lightBulb.png" alt="Light Bulb" draggable="true" ondragstart="drag(event)">
+
+
+            </aside>
+
+            <section id="level">
+                <img id="levelBackground" src="../Images/Level2/corridorNight2.png" alt="Level Background">
+                <img id="levelOuterBorder" src="../Images/Level2/outerBorder.png" alt="Level Border">
+                <img id="levelInnerBorder" src="../Images/Level2/innerBorder.png" alt="Level Border" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="greenButton" src="../Images/Level2/croppedGreenButton.png" alt="Escape Button" onclick="greenButton()">
+            </section>
+
+            <div class="GameInventory">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="inventorybox1" id="inventorybox1" onclick="inventoryBox1()">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox2" id="inventorybox2" onclick="maintenanceForm()">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox3" id="inventorybox3">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox4" id="inventorybox4">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox5" id="inventorybox5">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox6" id="inventorybox6">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="inventorybox7" id="inventorybox7">
+                                <div class="fill"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div><!-- end of div 'container' -->
+
+    </div><!-- end of div 'wrapper' -->
+
+    <script src="../JS/Level2.js"></script>
+</body>
+
+</html>
